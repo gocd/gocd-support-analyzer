@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Thread Dump Analyzer</title>
+    <script src="lodash-4.13.1.js" type="text/javascript"></script>
+    <script src="mithril-0.2.5.js" type="text/javascript"></script>
+    <script src="analyze.js" type="text/javascript"></script>
+    <script src="analyze_view.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="normalize.css" media="screen"/>
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        :target {
+            background-color: #ffa;
+        }
+
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        td {
+            vertical-align: top;
+            border: 1px solid black;
+        }
+
+        td a.thread {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+<p>Json:</p>
+<textarea cols="115" rows="10" id="thread_dump_json"></textarea>
+<input type="submit" value="Analyze" onclick="analyzeThreadDump()">
+<div id="analyze_report"></div>
+<script>
+//
+</script>
+</body>
+</html>
